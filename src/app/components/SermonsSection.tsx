@@ -4,28 +4,31 @@ import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 
 const recentSermons = [
-  {
-    title: 'How to Master Temptation',
-    speaker: 'Rev Binu J Mathew',
-    date: 'November 16, 2025',
-    thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_1fcd0faac-1784405538334.png",
-    thumbnailAlt: 'Speaker at podium in warmly lit church sanctuary with congregation in background'
-  },
-  {
-    title: 'Sunday Service Message',
-    speaker: 'Ps. Blesson Vargis',
-    date: 'November 9, 2025',
-    thumbnail: "https://images.unsplash.com/photo-1479648673956-a6b7ced23550",
-    thumbnailAlt: 'Open Bible on wooden surface in warm natural light with congregation blurred behind'
-  },
-  {
-    title: 'Power of Prayer',
-    speaker: 'Rev. Binu J Mathew',
-    date: 'November 2, 2025',
-    thumbnail: "https://images.unsplash.com/photo-1551407681-9b76b5a7bdb1",
-    thumbnailAlt: 'Worshippers with raised hands in dimly lit sanctuary with stage lighting'
-  }
-];
+{
+  title: 'Standing Unshaken',
+  speaker: 'Rev Binu J Mathew',
+  date: 'Latest Sermon',
+  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_1a715908a-1767300869415.png",
+  thumbnailAlt: 'Standing Unshaken sermon by Rev Binu J Mathew - YouTube thumbnail',
+  url: 'https://www.youtube.com/live/rd-rtnuqQJY?si=n8PtXYntgr6ZDhbp'
+},
+{
+  title: 'Faith Under Fire',
+  speaker: 'Rev Binu J Mathew',
+  date: 'Recent Sermon',
+  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_136d5895e-1769010984017.png",
+  thumbnailAlt: 'Faith Under Fire sermon by Rev Binu J Mathew - YouTube thumbnail',
+  url: 'https://www.youtube.com/watch?v=2r55lHWPfzQ'
+},
+{
+  title: 'Overcome The Trials Against Our Faith',
+  speaker: 'Rev Binu J Mathew',
+  date: 'Recent Sermon',
+  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_17feff949-1767300869192.png",
+  thumbnailAlt: 'Overcome The Trials Against Our Faith sermon by Rev Binu J Mathew - YouTube thumbnail',
+  url: 'https://www.youtube.com/watch?v=cY9f82dXL7Q'
+}];
+
 
 
 export default function SermonsSection() {
@@ -66,9 +69,12 @@ export default function SermonsSection() {
         {/* Recent sermons grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
           {recentSermons?.map((sermon, i) =>
-          <div
+          <a
             key={i}
-            className="animate-on-scroll glass-card-ivory rounded-2xl overflow-hidden border border-church-gold/20 card-hover-lift group shadow-sm"
+            href={sermon?.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="animate-on-scroll glass-card-ivory rounded-2xl overflow-hidden border border-church-gold/20 card-hover-lift group shadow-sm block"
             style={{ transitionDelay: `${i * 80}ms` }}>
             
               <div className="relative aspect-video overflow-hidden">
@@ -93,7 +99,7 @@ export default function SermonsSection() {
                 <h4 className="font-display text-base font-semibold text-church-green mb-1 leading-snug">{sermon?.title}</h4>
                 <p className="text-church-bronze text-xs">by {sermon?.speaker}</p>
               </div>
-            </div>
+            </a>
           )}
         </div>
 
