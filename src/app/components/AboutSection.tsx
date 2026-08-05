@@ -138,15 +138,21 @@ export default function AboutSection() {
         </div>
 
         {/* Our Promise */}
-        <div className="animate-on-scroll glass-card-dark rounded-3xl p-8 sm:p-10 bg-church-green text-white relative overflow-hidden">
-          <div className="absolute inset-0 cross-pattern opacity-5 pointer-events-none" />
+        <div className="animate-on-scroll rounded-3xl p-8 sm:p-10 bg-white border border-church-gold/30 shadow-lg relative overflow-hidden">
+          <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{background: 'linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(245,240,225,0.6) 100%)'}} />
           <div className="relative z-10 text-center max-w-3xl mx-auto">
-            <p className="font-display text-church-gold text-sm uppercase tracking-widest mb-3">Our Promise to You</p>
-            <p className="font-display text-2xl sm:text-3xl font-medium text-white leading-relaxed italic">
+            <div className="w-12 h-12 rounded-full bg-church-green flex items-center justify-center mx-auto mb-4">
+              <svg className="w-6 h-6 text-church-gold" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="font-display text-church-green text-sm uppercase tracking-widest font-bold mb-3">Our Promise to You</p>
+            <div className="section-divider-gold w-16 mx-auto mb-5" />
+            <p className="font-display text-xl sm:text-2xl font-medium text-church-green leading-relaxed italic">
               "Every person who walks through our doors will encounter God's Presence, Genuine Love, Biblical Teaching, Authentic Community, and Practical Hope."
             </p>
             <div className="mt-6">
-              <Link href="/about" className="inline-flex items-center gap-2 text-church-gold hover:text-white text-sm font-semibold transition-colors duration-200">
+              <Link href="/about" className="btn-primary-church inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm">
                 Worship with Us →
               </Link>
             </div>
