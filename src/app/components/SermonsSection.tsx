@@ -8,7 +8,7 @@ const recentSermons = [
   title: 'Standing Unshaken',
   speaker: 'Rev Binu J Mathew',
   date: 'Latest Sermon',
-  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_1a715908a-1767300869415.png",
+  thumbnail: "https://pub-8c1e4840428648e1a080e3046ee0d095.r2.dev/Bethesda%20AG/BAG%202.jpg",
   thumbnailAlt: 'Standing Unshaken sermon by Rev Binu J Mathew - YouTube thumbnail',
   url: 'https://www.youtube.com/live/rd-rtnuqQJY?si=n8PtXYntgr6ZDhbp'
 },
@@ -16,7 +16,7 @@ const recentSermons = [
   title: 'Faith Under Fire',
   speaker: 'Rev Binu J Mathew',
   date: 'Recent Sermon',
-  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_136d5895e-1769010984017.png",
+  thumbnail: "https://pub-8c1e4840428648e1a080e3046ee0d095.r2.dev/Bethesda%20AG/BAG%203.jpg",
   thumbnailAlt: 'Faith Under Fire sermon by Rev Binu J Mathew - YouTube thumbnail',
   url: 'https://www.youtube.com/watch?v=2r55lHWPfzQ'
 },
@@ -24,7 +24,7 @@ const recentSermons = [
   title: 'Overcome The Trials Against Our Faith',
   speaker: 'Rev Binu J Mathew',
   date: 'Recent Sermon',
-  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_17feff949-1767300869192.png",
+  thumbnail: "https://pub-8c1e4840428648e1a080e3046ee0d095.r2.dev/Bethesda%20AG/BAG%201.jpg",
   thumbnailAlt: 'Overcome The Trials Against Our Faith sermon by Rev Binu J Mathew - YouTube thumbnail',
   url: 'https://www.youtube.com/watch?v=cY9f82dXL7Q'
 }];
