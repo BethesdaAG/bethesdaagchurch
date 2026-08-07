@@ -24,7 +24,7 @@ const recentSermons = [
   title: 'Overcome The Trials Against Our Faith',
   speaker: 'Rev Binu J Mathew',
   date: 'Recent Sermon',
-  thumbnail: "https://img.rocket.new/generatedImages/rocket_gen_img_17feff949-1767300869192.png",
+  thumbnail: "https://pub-8c1e4840428648e1a080e3046ee0d095.r2.dev/Bethesda%20AG/BAG%201.jpg",
   thumbnailAlt: 'Overcome The Trials Against Our Faith sermon by Rev Binu J Mathew - YouTube thumbnail',
   url: 'https://www.youtube.com/watch?v=cY9f82dXL7Q'
 }];
